@@ -13,6 +13,7 @@ class RolePolicy
      */
     public function viewAny(User $user): bool
     {
+        // return true;
         return $user->hasPermissionTo('access_admin');
     }
 
@@ -21,6 +22,7 @@ class RolePolicy
      */
     public function view(User $user, Role $role): bool
     {
+        // return true;
         return $user->hasPermissionTo('access_admin');
     }
 
@@ -29,6 +31,7 @@ class RolePolicy
      */
     public function create(User $user): bool
     {
+        // return true;
         return $user->hasPermissionTo('access_admin');
     }
 
@@ -37,6 +40,7 @@ class RolePolicy
      */
     public function update(User $user, Role $role): bool
     {
+        // return true;
         return $user->hasPermissionTo('access_admin');
     }
 
@@ -45,6 +49,7 @@ class RolePolicy
      */
     public function delete(User $user, Role $role): bool
     {
+        // return true;
         return $user->hasPermissionTo('access_admin');
     }
 
