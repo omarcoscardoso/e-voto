@@ -47,13 +47,14 @@ class EleicaoResource extends Resource
                 Tables\Columns\TextColumn::make('id_eleicao')
                     ->numeric()
                     ->sortable(),
-                Tables\Columns\TextColumn::make('assembleia.nome')
-                    ->numeric()
-                    ->sortable(),
                 Tables\Columns\TextColumn::make('nome_oficio')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('qt_vagas')
                     ->numeric()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('assembleia.nome')
+                    ->numeric()
+                    ->searchable()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
